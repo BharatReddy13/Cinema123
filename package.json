@@ -1,0 +1,9 @@
+{
+    "name": "cinema123",
+    "version": "1.0.0",
+    "description": "Dependencies Cinema123 implemented in node.js",
+    "dependencies": {
+        "axios": "^0.22.0",
+        "crypto-js": "^4.1.1"
+    }
+}
