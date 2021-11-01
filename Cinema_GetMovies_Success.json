@@ -1,0 +1,88 @@
+{
+    "description": "Make request to Movie API and validate the response",
+    "request": {
+        "endpoint": "https://api.themoviedb.org/3/search/movie",
+        "params": "language=en-US&page=1&include_adult=false&query=The Avengers&year=2012"
+    },
+    "validateApiResponse": {
+        "expected": {
+            "page": 1,
+            "total_pages": 1,
+            "total_results": 4,
+            "results": [
+                {
+                    "adult": false,
+                    "backdrop_path": null,
+                    "genre_ids": [],
+                    "id": 448368,
+                    "original_language": "en",
+                    "original_title": "The Avengers: A Visual Journey",
+                    "overview": "Joss Whedon and others in interviews discussing the aims for this new franchise.",
+                    "popularity": 14.75,
+                    "poster_path": "/2kBT7KONKQTIhkMc2ZtPU11E8Ky.jpg",
+                    "release_date": "2012-09-25",
+                    "title": "The Avengers: A Visual Journey",
+                    "video": true,
+                    "vote_average": 7.9,
+                    "vote_count": 11
+                },
+                {
+                    "adult": false,
+                    "backdrop_path": null,
+                    "genre_ids": [
+                        99
+                    ],
+                    "id": 448364,
+                    "original_language": "en",
+                    "original_title": "The Avengers: Assembling the Ultimate Team",
+                    "overview": "Joss Whedon and others in interviews discussing the aims for this new franchise.",
+                    "popularity": 0.731,
+                    "poster_path": null,
+                    "release_date": "2012-09-25",
+                    "title": "The Avengers: Assembling the Ultimate Team",
+                    "video": true,
+                    "vote_average": 6.8,
+                    "vote_count": 4
+                },
+                {
+                    "adult": false,
+                    "backdrop_path": "/nNmJRkg8wWnRmzQDe2FwKbPIsJV.jpg",
+                    "genre_ids": [
+                        878,
+                        28,
+                        12
+                    ],
+                    "id": 24428,
+                    "original_language": "en",
+                    "original_title": "The Avengers",
+                    "overview": "When an unexpected enemy emerges and threatens global safety and security, Nick Fury, director of the international peacekeeping agency known as S.H.I.E.L.D., finds himself in need of a team to pull the world back from the brink of disaster. Spanning the globe, a daring recruitment effort begins!",
+                    "popularity": 241.037,
+                    "poster_path": "/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg",
+                    "release_date": "2012-04-25",
+                    "title": "The Avengers",
+                    "video": false,
+                    "vote_average": 7.7,
+                    "vote_count": 25549
+                },
+                {
+                    "adult": false,
+                    "backdrop_path": "/6zXs4OyZM6U4reYvddsJWeByxMX.jpg",
+                    "genre_ids": [
+                        99
+                    ],
+                    "id": 448366,
+                    "original_language": "en",
+                    "original_title": "Building the Dream: Assembling the Avengers",
+                    "overview": "Witness Marvel's epic journey, from its comic book origins to its blockbuster film franchises, through seven exclusive featurettes. Get the inside story, with exclusive behind-the-scenes footage and cast interviews, and discover the history behind its legendary characters and films -- Iron Man, The Incredible Hulk, Iron Man 2, Thor, Captain America: The First Avenger, and Marvel's The Avengers! With over 90 minutes of original footage, this is your all-access pass to Marvel and Phase One of the Marvel Cinematic Universe!",
+                    "popularity": 14.399,
+                    "poster_path": "/coS6rIaucxDzq20kiJozTgQ0Nmk.jpg",
+                    "release_date": "2012-09-25",
+                    "title": "Building the Dream: Assembling the Avengers",
+                    "video": true,
+                    "vote_average": 8.4,
+                    "vote_count": 21
+                }
+            ]
+        }
+    }
+}
